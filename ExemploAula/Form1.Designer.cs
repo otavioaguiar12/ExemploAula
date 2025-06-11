@@ -32,7 +32,7 @@
             lblusuario = new Label();
             txtusuario = new TextBox();
             lblsenha = new Label();
-            textBox1 = new TextBox();
+            txtsenha = new TextBox();
             btnlogar = new Button();
             SuspendLayout();
             // 
@@ -76,13 +76,14 @@
             lblsenha.TabIndex = 3;
             lblsenha.Text = "Senha:";
             // 
-            // textBox1
+            // txtsenha
             // 
-            textBox1.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            textBox1.Location = new Point(135, 185);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(154, 25);
-            textBox1.TabIndex = 4;
+            txtsenha.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            txtsenha.Location = new Point(135, 185);
+            txtsenha.Name = "txtsenha";
+            txtsenha.Size = new Size(154, 25);
+            txtsenha.TabIndex = 4;
+            txtsenha.TextChanged += textBox1_TextChanged;
             // 
             // btnlogar
             // 
@@ -101,7 +102,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(385, 308);
             Controls.Add(btnlogar);
-            Controls.Add(textBox1);
+            Controls.Add(txtsenha);
             Controls.Add(lblsenha);
             Controls.Add(txtusuario);
             Controls.Add(lblusuario);
@@ -120,7 +121,7 @@
         private Label lblusuario;
         private TextBox txtusuario;
         private Label lblsenha;
-        private TextBox textBox1;
+        private TextBox txtsenha;
         private Button btnlogar;
     }
 }

@@ -24,6 +24,18 @@ namespace ExemploAula
 
         private void btnlogar_Click(object sender, EventArgs e)
         {
+            if (txtusuario.Text == "admin" && txtsenha.Text == "123456")
+            {
+
+            }
+            else
+            {
+
+            }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }
