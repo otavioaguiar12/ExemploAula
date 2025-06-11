@@ -31,6 +31,8 @@ namespace ExemploAula
                 txtsenha.Clear();
 
                 txtusuario.Focus();
+;
+
             }
             else
             {

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             lblmenu = new Label();
+            btnvoltar = new Button();
             SuspendLayout();
             // 
             // lblmenu
@@ -37,16 +38,26 @@
             lblmenu.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblmenu.Location = new Point(280, 76);
             lblmenu.Name = "lblmenu";
-            lblmenu.Size = new Size(236, 25);
+            lblmenu.Size = new Size(259, 25);
             lblmenu.TabIndex = 0;
-            lblmenu.Text = "Seja bem vindo ao menu ";
+            lblmenu.Text = "SEJA BEM VINDO AO MENU";
             lblmenu.Click += lblmenu_Click;
+            // 
+            // btnvoltar
+            // 
+            btnvoltar.Location = new Point(49, 167);
+            btnvoltar.Name = "btnvoltar";
+            btnvoltar.Size = new Size(81, 65);
+            btnvoltar.TabIndex = 1;
+            btnvoltar.Text = "Voltar";
+            btnvoltar.UseVisualStyleBackColor = true;
             // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnvoltar);
             Controls.Add(lblmenu);
             Name = "Form2";
             Text = "Form2";
@@ -57,5 +68,6 @@
         #endregion
 
         private Label lblmenu;
+        private Button btnvoltar;
     }
 }
