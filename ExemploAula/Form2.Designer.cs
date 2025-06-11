@@ -45,12 +45,13 @@
             // 
             // btnvoltar
             // 
-            btnvoltar.Location = new Point(49, 167);
+            btnvoltar.Location = new Point(77, 171);
             btnvoltar.Name = "btnvoltar";
             btnvoltar.Size = new Size(81, 65);
             btnvoltar.TabIndex = 1;
             btnvoltar.Text = "Voltar";
             btnvoltar.UseVisualStyleBackColor = true;
+            btnvoltar.Click += btnvoltar_Click;
             // 
             // Form2
             // 

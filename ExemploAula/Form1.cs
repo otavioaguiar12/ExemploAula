@@ -31,6 +31,10 @@ namespace ExemploAula
                 txtsenha.Clear();
 
                 txtusuario.Focus();
+
+                this.Hide();
+                Form2 menu = new Form2();
+                menu.Show();
 ;
 
             }
