@@ -11,5 +11,10 @@ namespace ExemploAula
         {
 
         }
+
+        private void lbllogin_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
