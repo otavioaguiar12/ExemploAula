@@ -32,14 +32,16 @@
             lblusuario = new Label();
             txtusuario = new TextBox();
             lblsenha = new Label();
+            textBox1 = new TextBox();
             SuspendLayout();
             // 
             // lbllogin
             // 
             lbllogin.AutoSize = true;
-            lbllogin.Location = new Point(135, 41);
+            lbllogin.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
+            lbllogin.Location = new Point(135, 56);
             lbllogin.Name = "lbllogin";
-            lbllogin.Size = new Size(42, 15);
+            lbllogin.Size = new Size(99, 37);
             lbllogin.TabIndex = 0;
             lbllogin.Text = "LOGIN";
             lbllogin.TextAlign = ContentAlignment.TopCenter;
@@ -48,37 +50,50 @@
             // lblusuario
             // 
             lblusuario.AutoSize = true;
-            lblusuario.Location = new Point(62, 127);
+            lblusuario.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            lblusuario.Location = new Point(71, 144);
             lblusuario.Name = "lblusuario";
-            lblusuario.Size = new Size(50, 15);
+            lblusuario.Size = new Size(64, 19);
             lblusuario.TabIndex = 1;
             lblusuario.Text = "Usuário:";
             // 
             // txtusuario
             // 
-            txtusuario.Location = new Point(118, 124);
+            txtusuario.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            txtusuario.Location = new Point(135, 141);
             txtusuario.Name = "txtusuario";
-            txtusuario.Size = new Size(100, 23);
+            txtusuario.Size = new Size(114, 25);
             txtusuario.TabIndex = 2;
             // 
             // lblsenha
             // 
             lblsenha.AutoSize = true;
-            lblsenha.Location = new Point(62, 166);
+            lblsenha.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            lblsenha.Location = new Point(71, 188);
             lblsenha.Name = "lblsenha";
-            lblsenha.Size = new Size(42, 15);
+            lblsenha.Size = new Size(53, 19);
             lblsenha.TabIndex = 3;
             lblsenha.Text = "Senha:";
             // 
+            // textBox1
+            // 
+            textBox1.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            textBox1.Location = new Point(135, 185);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(114, 25);
+            textBox1.TabIndex = 4;
+            // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(914, 510);
+            Controls.Add(textBox1);
             Controls.Add(lblsenha);
             Controls.Add(txtusuario);
             Controls.Add(lblusuario);
             Controls.Add(lbllogin);
+            Font = new Font("Segoe UI", 10F, FontStyle.Bold);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
@@ -91,5 +106,6 @@
         private Label lblusuario;
         private TextBox txtusuario;
         private Label lblsenha;
+        private TextBox textBox1;
     }
 }
