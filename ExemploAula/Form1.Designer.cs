@@ -33,6 +33,7 @@
             txtusuario = new TextBox();
             lblsenha = new Label();
             textBox1 = new TextBox();
+            btnlogar = new Button();
             SuspendLayout();
             // 
             // lbllogin
@@ -62,7 +63,7 @@
             txtusuario.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
             txtusuario.Location = new Point(135, 141);
             txtusuario.Name = "txtusuario";
-            txtusuario.Size = new Size(114, 25);
+            txtusuario.Size = new Size(154, 25);
             txtusuario.TabIndex = 2;
             // 
             // lblsenha
@@ -80,14 +81,26 @@
             textBox1.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
             textBox1.Location = new Point(135, 185);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(114, 25);
+            textBox1.Size = new Size(154, 25);
             textBox1.TabIndex = 4;
+            // 
+            // btnlogar
+            // 
+            btnlogar.Cursor = Cursors.Hand;
+            btnlogar.Location = new Point(135, 241);
+            btnlogar.Name = "btnlogar";
+            btnlogar.Size = new Size(100, 30);
+            btnlogar.TabIndex = 5;
+            btnlogar.Text = "Logar";
+            btnlogar.UseVisualStyleBackColor = true;
+            btnlogar.Click += btnlogar_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(914, 510);
+            ClientSize = new Size(385, 308);
+            Controls.Add(btnlogar);
             Controls.Add(textBox1);
             Controls.Add(lblsenha);
             Controls.Add(txtusuario);
@@ -96,6 +109,7 @@
             Font = new Font("Segoe UI", 10F, FontStyle.Bold);
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -107,5 +121,6 @@
         private TextBox txtusuario;
         private Label lblsenha;
         private TextBox textBox1;
+        private Button btnlogar;
     }
 }
