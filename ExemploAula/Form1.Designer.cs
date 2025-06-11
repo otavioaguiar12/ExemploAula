@@ -81,6 +81,7 @@
             txtsenha.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
             txtsenha.Location = new Point(135, 185);
             txtsenha.Name = "txtsenha";
+            txtsenha.PasswordChar = '*';
             txtsenha.Size = new Size(154, 25);
             txtsenha.TabIndex = 4;
             txtsenha.TextChanged += textBox1_TextChanged;

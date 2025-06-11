@@ -26,11 +26,18 @@ namespace ExemploAula
         {
             if (txtusuario.Text == "admin" && txtsenha.Text == "123456")
             {
+                MessageBox.Show("Login realizado com sucesso");
+                txtusuario.Clear();
+                txtsenha.Clear();
 
+                txtusuario.Focus();
             }
             else
             {
-
+                MessageBox.Show("O usuário ou a senha estão incorretos");
+                txtusuario.Clear(); 
+                txtsenha.Clear();
+                txtusuario.Focus();
             }
         }
 
