@@ -16,5 +16,10 @@ namespace ExemploAula
         {
             InitializeComponent();
         }
+
+        private void lblmenu_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

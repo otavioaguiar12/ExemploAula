@@ -28,12 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form2";
+            lblmenu = new Label();
+            SuspendLayout();
+            // 
+            // lblmenu
+            // 
+            lblmenu.AutoSize = true;
+            lblmenu.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblmenu.Location = new Point(280, 76);
+            lblmenu.Name = "lblmenu";
+            lblmenu.Size = new Size(236, 25);
+            lblmenu.TabIndex = 0;
+            lblmenu.Text = "Seja bem vindo ao menu ";
+            lblmenu.Click += lblmenu_Click;
+            // 
+            // Form2
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(lblmenu);
+            Name = "Form2";
+            Text = "Form2";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label lblmenu;
     }
 }
