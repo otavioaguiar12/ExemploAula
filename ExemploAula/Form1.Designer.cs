@@ -30,6 +30,7 @@
         {
             lbllogin = new Label();
             lblusuario = new Label();
+            txtusuario = new TextBox();
             SuspendLayout();
             // 
             // lbllogin
@@ -52,11 +53,19 @@
             lblusuario.TabIndex = 1;
             lblusuario.Text = "Usuário:";
             // 
+            // txtusuario
+            // 
+            txtusuario.Location = new Point(118, 124);
+            txtusuario.Name = "txtusuario";
+            txtusuario.Size = new Size(100, 23);
+            txtusuario.TabIndex = 2;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(txtusuario);
             Controls.Add(lblusuario);
             Controls.Add(lbllogin);
             Name = "Form1";
@@ -69,5 +78,6 @@
 
         private Label lbllogin;
         private Label lblusuario;
+        private TextBox txtusuario;
     }
 }
